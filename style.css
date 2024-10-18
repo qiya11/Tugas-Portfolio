@@ -1,0 +1,397 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #050C9C;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #F8E559;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #615EFC, #0E46A3);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero .highlight {
+  color: #F6E96B;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #F6E96B;
+  color: #050C9C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #F6E96B;
+}
+
+/* About Section Styling */
+.about {
+  padding: 50px 0;
+  background-color:white;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center; /* Menyelaraskan secara vertikal */
+  justify-content: center; /* Menyelaraskan secara horizontal */
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 4px solid #2e3a59;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: justify; /* Memperbaiki aliran teks */
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-photo {
+      margin-bottom: 15px;
+  }
+
+  .about h2 {
+      margin-bottom: 10px;
+  }
+}
+
+
+/* Education Section */
+.education h2 {
+  color: white;
+  padding: 20px;
+}
+
+.education {
+  padding: 50px;
+  background: linear-gradient(135deg, #615EFC, #0E46A3);
+  text-align: center;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color:white;
+  color: black;
+  padding: 15px;
+  border-radius: 8px;
+  width: 60%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-card img {
+  width: 70px;
+  height: 70px;
+}
+
+.education p {
+  text-align: left;
+}
+
+/* Skills Section */
+.skills {
+  padding: 50px;
+  background-color: white;
+  text-align: center;
+  color: #333;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Soft Skills */
+.soft-skills {
+  padding: 10px;
+  background-color:white; /* Latar belakang yang lembut */
+}
+
+.soft-skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.soft-skills h4 {
+  color: white;
+}
+
+.soft-skills p {
+  color: white;
+}
+
+.soft-skills-list {
+  display: flex;
+  justify-content: space-around; /* Menyelaraskan kartu di antara satu sama lain */
+  flex-wrap: wrap; /* Membuatnya responsif */
+  gap: 20px;
+}
+
+.soft-skill-card {
+  background-color: #0E46A3; /* Latar belakang putih untuk kartu */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 30%; /* Kartu akan memiliki lebar 30% dari parent */
+  min-width: 250px; /* Lebar minimum untuk kartu */
+  transition: transform 0.3s; /* Transisi efek saat hover */
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-5px); /* Efek hover */
+}
+
+/* Hard Skills */
+.hard-skills {
+  padding: 10px;
+  background-color: white; /* Latar belakang yang lembut */
+}
+
+.hard-skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.hard-skills h4 {
+  color: white;
+}
+
+.hard-skills p {
+  color: white;
+}
+
+.hard-skills-list {
+  display: flex;
+  justify-content: space-around; /* Menyelaraskan kartu di antara satu sama lain */
+  flex-wrap: wrap; /* Membuatnya responsif */
+  gap: 20px;
+}
+
+.hard-skill-card {
+  background-color: #0E46A3; /* Latar belakang putih untuk kartu */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 30%; /* Kartu akan memiliki lebar 30% dari parent */
+  min-width: 250px; /* Lebar minimum untuk kartu */
+  transition: transform 0.3s; /* Transisi efek saat hover */
+}
+
+.hard-skill-card:hover {
+  transform: translateY(-5px); /* Efek hover */
+}
+
+.hard-skill-image {
+  width: 60px; /* Ukuran gambar */
+  height: 60px; /* Ukuran gambar */
+  border-radius: 50%; /* Membuat gambar berbentuk bulat */
+  margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hard-skills-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Projects Section */
+.projects {
+  padding: 50px;
+  background: linear-gradient(135deg, #615EFC, #0E46A3);
+  color: black;
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  text-align:center;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.projects h2 {
+  color: white;
+}
+
+
+/* Contact Section */
+.contact {
+  padding: 50px;
+  background: linear-gradient(135deg, #615EFC, #0E46A3);
+  text-align: center;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input, .contact textarea, .contact button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color:#F8E559;
+  color:#0E46A3;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color:#F8E559;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background-color: #050C9C;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
